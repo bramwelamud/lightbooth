@@ -32,7 +32,7 @@ const section1: React.FC<Props> = () => {
     <div className="w-full bg-gradient-to-r from-slate-1200 via-black-1300 to-slate-1400 py-12 px-4">
       <div className="max-w-9xl mx-auto">
         <h2 className="text-4xl font-bold text-white text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-          expreirence the magic of Glimps
+          experience the magic of Glimps
         </h2>
         
         {/* Horizontal scrolling container */}
