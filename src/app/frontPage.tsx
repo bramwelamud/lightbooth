@@ -4,7 +4,8 @@ import  { useState, useEffect } from 'react';
  import image1 from '../assets/Untitled design.png';
 
 function FrontPage() {
-  const words = ['the fun', 'the kiss', 'the night', 'the smiles', 'the vibe', 'the friends'];
+  const words =['веселье', 'поцелуй', 'ночь', 'улыбки', 'атмосфера', 'друзья']
+;
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -34,12 +35,12 @@ function FrontPage() {
     <div style={backgroundStyle}>
       <div className="flex items-center justify-start h-full m-0 relative">
         <div className="ml-8">
-          <h2 className="text-white text-6xl font-bold mb-4 drop-shadow-2xl">
-            Remember
+          <h2 className="text-white text-4xl font-bold mb-4 drop-shadow-2xl">
+            Сервис селфи-камер, который превращает <br></br> гостей в ваших <br></br>онлайн-амбассадоров — и помогает продавать больше
           </h2>
           
           <div className="text-left mt-8">
-            <span className="text-gray-200 text-3xl font-light">Capture </span>
+            <span className="text-gray-200 text-3xl font-light"> захватить </span>
             <span 
               className={`text-pink-300 text-3xl font-semibold transition-all duration-300 transform inline-block ${
                 isVisible 
