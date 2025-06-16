@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 // You'll need to import your image - replace this with your actual image import
  import image1 from '../assets/Untitled design.png';

@@ -166,7 +166,7 @@ const PricingPage: React.FC = () => {
         <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-pink-500/20 rounded-full blur-xl animate-pulse delay-500"></div>
       </div>
 
-      <style tsx>{`
+      <style>{`
         @keyframes fade-in {
           from {
             opacity: 0;

@@ -9,7 +9,7 @@ import Contact from './app/contact'
 import About from './app/about'
 import Footer from './app/footer'
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import './App.css'
 
 function App() {
