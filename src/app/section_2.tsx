@@ -1,4 +1,3 @@
-import React from 'react';
 import lightmvp from '../assets/light.mp4';
 
 type Props = {}
