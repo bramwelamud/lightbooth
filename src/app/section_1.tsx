@@ -9,6 +9,18 @@ import image11  from '../assets/image11.jpeg';
 import image12  from '../assets/image12.jpeg';
 import image13  from '../assets/image13.png';
 import image14  from '../assets/image14.png';
+import image15  from '../assets/image15.jpg';
+import image16  from '../assets/image16.jpg';
+import image17  from '../assets/image17.jpeg';
+import image18  from '../assets/image18.jpg';
+import image19  from '../assets/image19.jpg'; 
+import image20  from '../assets/image20.jpg';
+import image21  from '../assets/image21.jpg';
+import image22  from '../assets/image22.jpg';
+import image23  from '../assets/image23.jpg';
+import image24  from '../assets/image24.jpg';
+import image25  from '../assets/image25.jpg';
+import image26  from '../assets/image26.jpg';
 
 type Props = {};
 const section1: React.FC<Props> = () => {
@@ -24,6 +36,18 @@ const section1: React.FC<Props> = () => {
     { src: image12, alt: "Image 12" },
     { src: image13, alt: "Image 13" },
     { src: image14, alt: "Image 14" },
+    { src: image15, alt: "Image 14" },
+    { src: image16, alt: "Image 14" },
+    { src: image17, alt: "Image 14" },
+    { src: image18, alt: "Image 14" },
+    { src: image19, alt: "Image 14" },
+    { src: image20, alt: "Image 14" },
+    { src: image21, alt: "Image 14" },
+    { src: image22, alt: "Image 14" },
+    { src: image23, alt: "Image 14" },
+    { src: image24, alt: "Image 14" },
+    { src: image25, alt: "Image 14" },
+    { src: image26, alt: "Image 14" },
   ];
 
   // Duplicate images for seamless loop
@@ -55,7 +79,7 @@ const section1: React.FC<Props> = () => {
       <div className="w-full bg-gradient-to-r from-slate-1200 via-black-1300 to-slate-1400 py-12 px-4">
         <div className="max-w-9xl mx-auto">
           <h2 className="text-4xl font-bold text-white text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-           Почувствуйте магию  LightBooth
+           Почувствуйте магию  Glimps
           </h2>
           
           {/* Auto-scrolling container with no scrollbar */}

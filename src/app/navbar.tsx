@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/logo_white.svg';
+import Logo from '../assets/IMG_20250531_174626_916.jpg';
 import { NavLink } from 'react-router-dom';
 
 type Props = {};
@@ -55,12 +55,13 @@ const Navbar: React.FC<Props> = () => {
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <NavLink to="">
-            <img 
-              src={Logo} 
-              alt="logo" 
-              className="h-8 w-auto transition-transform duration-300 hover:scale-105"
-            />
+            <NavLink to="" className="flex items-center space-x-3">
+              <img 
+                src={Logo} 
+                alt="logo" 
+                className="h-8 w-8 rounded-full object-cover transition-transform duration-300 hover:scale-105"
+              />
+              <span className="text-white text-xl font-semibold">Glimps</span>
             </NavLink>
           </div>
 
@@ -150,7 +151,7 @@ const Navbar: React.FC<Props> = () => {
               </div>
             </NavLink>
             <NavLink
-             to="/features"
+             to="/Features"
               onClick={closeMenu}
               className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-600 rounded-md transition-all duration-300 transform hover:translate-x-2"
             >

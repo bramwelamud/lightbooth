@@ -4,7 +4,7 @@ import  { useState, useEffect } from 'react';
  import image1 from '../assets/Untitled design.png';
 
 function FrontPage() {
-  const words =['веселье', 'поцелуй', 'ночь', 'улыбки', 'атмосфера', 'друзья']
+  const words =["момент",  "поцелуй", "веселье", "тусовку" ,"встречу", "друзей" ,"улыбку" , "смех"]
 ;
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
@@ -36,11 +36,11 @@ function FrontPage() {
       <div className="flex items-center justify-start h-full m-0 relative">
         <div className="ml-8">
           <h2 className="text-white text-4xl font-bold mb-4 drop-shadow-2xl">
-            Сервис селфи-камер, который превращает <br></br> гостей в ваших <br></br>онлайн-амбассадоров — и помогает продавать больше
+           Glimps — не просто фотобудка, а маркетинг инструмент
           </h2>
           
           <div className="text-left mt-8">
-            <span className="text-gray-200 text-3xl font-light"> захватить </span>
+            <span className="text-gray-200 text-3xl font-light"> Запечатлит </span>
             <span 
               className={`text-pink-300 text-3xl font-semibold transition-all duration-300 transform inline-block ${
                 isVisible 
