@@ -10,6 +10,7 @@ import Contact from './app/contact'
 import About from './app/about'
 import Features from './app/features'
 import Footer from './app/footer'
+import { Analytics } from "@vercel/analytics/next"
 
 import {  Routes, Route } from 'react-router-dom';
 import './App.css'
@@ -40,7 +41,9 @@ function App() {
         { <Route path="/About" element={<About/>} /> }
         { <Route path="/Contact" element={<Contact/>} /> }
         { <Route path="/Features" element={<Features/>} /> }
-       
+       <Analytics />
+        
+        
       </Routes>
       <footer>
        <Footer />
