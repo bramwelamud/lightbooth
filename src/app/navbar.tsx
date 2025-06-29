@@ -51,7 +51,7 @@ const Navbar: React.FC<Props> = () => {
 
   return (
     <div>
-      <nav className="bg-black p-4 shadow-lg fixed w-full z-50 transition-all duration-300 ease-in-out">
+      <nav className="fixed top-0 left-0 w-full bg-black px-4 py-3 shadow-lg z-50 overflow-x-hidden">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
