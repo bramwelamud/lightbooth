@@ -2,13 +2,10 @@ import image2  from '../assets/image2.jpeg';
 import image3  from '../assets/image3.jpeg';
 import image4  from '../assets/image4.jpeg';
 import image6  from '../assets/image6.png';
-import image8  from '../assets/image8.png';
 import image9  from '../assets/image9.jpeg';
 import image10  from '../assets/image10.png';
 import image11  from '../assets/image11.jpeg';
 import image12  from '../assets/image12.jpeg';
-import image13  from '../assets/image13.png';
-import image14  from '../assets/image14.png';
 import image15  from '../assets/image15.jpg';
 import image16  from '../assets/image16.jpg';
 import image17  from '../assets/image17.jpeg';
@@ -21,6 +18,9 @@ import image23  from '../assets/image23.jpg';
 import image24  from '../assets/image24.jpg';
 import image25  from '../assets/image25.jpg';
 import image26  from '../assets/image26.jpg';
+import image27  from '../assets/image27.jpg';
+import image28  from '../assets/image28.jpg';
+import image29  from '../assets/image29.jpg';
 
 type Props = {};
 const section1: React.FC<Props> = () => {
@@ -29,13 +29,10 @@ const section1: React.FC<Props> = () => {
     { src: image3, alt: "Image 3" },
     { src: image4, alt: "Image 4" },
     { src: image6, alt: "Image 6" },
-    { src: image8, alt: "Image 8" },
     { src: image9, alt: "Image 9" },
     { src: image10, alt: "Image 10" },
     { src: image11, alt: "Image 11" },
     { src: image12, alt: "Image 12" },
-    { src: image13, alt: "Image 13" },
-    { src: image14, alt: "Image 14" },
     { src: image15, alt: "Image 14" },
     { src: image16, alt: "Image 14" },
     { src: image17, alt: "Image 14" },
@@ -48,10 +45,22 @@ const section1: React.FC<Props> = () => {
     { src: image24, alt: "Image 14" },
     { src: image25, alt: "Image 14" },
     { src: image26, alt: "Image 14" },
+    { src: image27, alt: "Image 14" },
+    { src: image28, alt: "Image 14" },
+    { src: image29, alt: "Image 14" },
   ];
 
   // Duplicate images for seamless loop
-  const duplicatedImages = [...images, ...images];
+  const duplicatedImage = [...images, ...images];
+
+  function shuffleArray<T>(array: T[]): T[] {
+  return array
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+}
+
+const duplicatedImages = shuffleArray(duplicatedImage);
 
   return (
     <>

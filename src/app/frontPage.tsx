@@ -1,6 +1,5 @@
 import  { useState, useEffect } from 'react';
 
-// You'll need to import your image - replace this with your actual image import
  import image1 from '../assets/Untitled design.png';
 
 function FrontPage() {
@@ -35,7 +34,7 @@ function FrontPage() {
     <div style={backgroundStyle}>
       <div className="flex items-center justify-start h-full m-0 relative">
         <div className="ml-8">
-          <h2 className="text-white text-4xl font-bold mb-4 drop-shadow-2xl">
+          <h2 className="text-purple-500 to-blue-500 text-4xl font-bold mb-4 drop-shadow-2xl">
            Glimps — не просто фотобудка, а маркетинг инструмент
           </h2>
           

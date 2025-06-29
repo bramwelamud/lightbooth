@@ -54,10 +54,10 @@ const Contact = () => {
                     <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center shadow-lg">
                       <User className="w-6 h-6 text-white" />
                     </div>
-                    <div>
+                    {/* <div>
                       <p className="text-sm text-gray-400 uppercase tracking-wide">Контактное лицо</p>
                       <p className="text-2xl font-semibold text-white">Даниил Глимс</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

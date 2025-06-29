@@ -8,9 +8,10 @@ import Section_3 from './app/section_3'
 import Section_4 from './app/section_4'
 import Contact from './app/contact'
 import About from './app/about'
+import Download from './app/downloadPage'
 import Features from './app/features'
+import Animate from './app/animate'
 import Footer from './app/footer'
-import { Analytics } from "@vercel/analytics/next"
 
 import {  Routes, Route } from 'react-router-dom';
 import './App.css'
@@ -19,7 +20,7 @@ function App() {
 
   return (<>
   <div className="bg-black vh-100 margin smooth-scroll">
-    <div className="margin-0 ">
+    <div className=" mx-auto px-4">
       <Navbar />
       
       <Routes>
@@ -27,9 +28,11 @@ function App() {
           <>
             <FrontPage />
             <Section1 />
+            <Animate />
             <Section2 />
-            <Section_3 />
             <Section_4 />
+            <Section_3 />
+            <Download/>
             
             
           </>
@@ -41,7 +44,6 @@ function App() {
         { <Route path="/About" element={<About/>} /> }
         { <Route path="/Contact" element={<Contact/>} /> }
         { <Route path="/Features" element={<Features/>} /> }
-       <Analytics />
         
         
       </Routes>

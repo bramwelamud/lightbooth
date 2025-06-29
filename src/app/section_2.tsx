@@ -38,7 +38,7 @@ const Section_2: React.FC<Props> = () => {
           {/* Heading */}
           <div className="space-y-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
-              Сервис селфи-камер, который превращает гостей в ваших онлайн-амбассадоров — и помогает продавать больше
+              Glimps — это настенная фотобудка размером с часы.
             </h1>
           </div>
 
@@ -46,15 +46,16 @@ const Section_2: React.FC<Props> = () => {
           <div className="space-y-8 max-w-3xl mx-auto">
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
               <p className="text-lg md:text-xl text-gray-200 leading-relaxed text-left">
-                Мы создаём сервис селфи-камер, который делает любое событие ярче и заметнее. Наши камеры бесплатно фотографируют гостей, добавляют ваш логотип и сразу отправляют снимки в Telegram или по SMS — пока люди ещё в эмоциях и с желанием делиться. Фото начинают жить в соцсетях, а вместе с ними — и ваш бренд.
+               Она дарит гостям мгновенные снимки с вашим брендом, а вам — контакты, охват и продажи.
+Пока человек ещё в эмоциях, фото уже в его Telegram / SMS, и он делится им с друзьями. Каждая камера по согласованию собирает телефоны и юзернейм гостей, чтобы вы легко приглашали их на следующие вечеринки. В момент скачивания мы показываем персональное предложение — билет на новый ивент, welcome-drink или акцию вашего партнёра.    
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
-              <p className="text-lg md:text-xl text-gray-200 leading-relaxed text-left">
+            {/* <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+              {/* <p className="text-lg md:text-xl text-gray-200 leading-relaxed text-left">
                 Каждая камера собирает контакты гостей (по согласию), чтобы вы могли легко пригласить их на следующие вечеринки, акции или события. А на странице, где гость скачивает фото, мы показываем ему персонализированное предложение — ведь это лучший момент продать ему то, что вам выгодно: от билета на следующий ивент до коктейля уже сегодня.
-              </p>
-            </div>
+              </p> */}
+            {/* </div> */} 
           </div>
         </div>
       </div>
