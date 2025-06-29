@@ -1,5 +1,5 @@
 import image1 from "../assets/image27.jpg";
-import image2 from "../assets/image29.jpg";
+import image2 from "../assets/image2.jpeg";
 
 export default function Section4() {
   return (
