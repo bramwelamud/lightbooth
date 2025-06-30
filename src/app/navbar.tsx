@@ -50,16 +50,12 @@ const Navbar: React.FC<Props> = () => {
   );
 
   return (
-    <nav className="fixed top-0 w-full bg-black shadow-lg z-50">
-      <div className="mx-auto px-4 py-3 w-full max-w-[100vw]">
-        <div className="flex justify-between items-center w-full">
+    <div>
+      <nav className="bg-black p-4 shadow-lg fixed w-full z-50 transition-all duration-300 ease-in-out">
+        <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <NavLink 
-              to="/" 
-              className="flex items-center space-x-3" 
-              onClick={closeMenu}
-            >
+            <NavLink to="" className="flex items-center space-x-3">
               <img 
                 src={Logo} 
                 alt="logo" 
@@ -70,12 +66,20 @@ const Navbar: React.FC<Props> = () => {
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-6">
+          <ul className="hidden md:flex space-x-8">
             <li>
               <NavLink
-                to="/features"
-                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group px-2 py-1"
-                onClick={closeMenu}
+                to="/pricing"
+                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
+              >
+                Pricing
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/features"}
+                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
               >
                 Features
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
@@ -83,9 +87,8 @@ const Navbar: React.FC<Props> = () => {
             </li>
             <li>
               <NavLink 
-                to="/about"
-                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group px-2 py-1"
-                onClick={closeMenu}
+               to={"/About"}
+                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
               >
                 About
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
@@ -93,9 +96,8 @@ const Navbar: React.FC<Props> = () => {
             </li>
             <li>
               <NavLink
-                to="/contact"
-                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group px-2 py-1"
-                onClick={closeMenu}
+                to={"/contact"}
+                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
               >
                 Contact
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
@@ -103,9 +105,8 @@ const Navbar: React.FC<Props> = () => {
             </li>
             <li>
               <NavLink
-                to="/login"
-                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group px-2 py-1"
-                onClick={closeMenu}
+                to={"/Login"}
+                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
               >
                 Login
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
@@ -114,31 +115,45 @@ const Navbar: React.FC<Props> = () => {
           </ul>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-gray-300 hover:text-white focus:outline-none transition-all duration-300"
+              className="text-gray-300 hover:text-white focus:outline-none focus:text-white transition-all duration-300 hover:scale-110"
               aria-label="Toggle menu"
             >
-              {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
+              <div className="transition-transform duration-300 ease-in-out transform">
+                {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
+              </div>
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         <div 
-          className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ml-0.5${
+          className={`md:hidden transition-all duration-500 ease-in-out overflow-hidden ${
             isMenuOpen 
-              ? 'max-h-screen opacity-100' 
-              : 'max-h-0 opacity-0'
+              ? 'max-h-64 opacity-100 translate-y-0' 
+              : 'max-h-0 opacity-0 -translate-y-4'
           }`}
-          style={{ transitionProperty: 'max-height, opacity' }}
         >
-          <div className="px-2 pt-2 pb-3 space-y-2 bg-gray-800 mt-2 rounded-lg">
+          <div className="px-2 pt-4 pb-3 space-y-1 bg-gray-700 mt-4 rounded-lg shadow-lg">
             <NavLink
-              to="/features"
+              to="/pricing"
               onClick={closeMenu}
-              className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-md transition-colors duration-200"
+              className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-600 rounded-md transition-all duration-300 transform hover:translate-x-2"
+            >
+              <div className="flex items-center space-x-3">
+               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2h6v2m2 4H7a2 2 0 01-2-2V5a2 2 0 012-2h4l2 2h6a2 2 0 012 2v12a2 2 0 01-2 2z" />
+</svg>
+
+                <span>Pricing</span>
+              </div>
+            </NavLink>
+            <NavLink
+             to="/Features"
+              onClick={closeMenu}
+              className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-600 rounded-md transition-all duration-300 transform hover:translate-x-2"
             >
               <div className="flex items-center space-x-3">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,9 +163,9 @@ const Navbar: React.FC<Props> = () => {
               </div>
             </NavLink>
             <NavLink
-              to="/about"
+              to={"/about"}
               onClick={closeMenu}
-              className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-md transition-colors duration-200"
+              className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-600 rounded-md transition-all duration-300 transform hover:translate-x-2"
             >
               <div className="flex items-center space-x-3">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,9 +175,9 @@ const Navbar: React.FC<Props> = () => {
               </div>
             </NavLink>
             <NavLink
-              to="/contact"
+              to={"/contact"}
               onClick={closeMenu}
-              className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-md transition-colors duration-200"
+              className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-600 rounded-md transition-all duration-300 transform hover:translate-x-2"
             >
               <div className="flex items-center space-x-3">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -172,21 +187,22 @@ const Navbar: React.FC<Props> = () => {
               </div>
             </NavLink>
             <NavLink
-              to="/login"
+              to={"/Login"}
               onClick={closeMenu}
-              className="block px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-700 rounded-md transition-colors duration-200"
+              className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-600 rounded-md transition-all duration-300 transform hover:translate-x-2"
             >
               <div className="flex items-center space-x-3">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0l4-4m-4 4l4 4m13-8v12a2 2 0 01-2 2H9a2 2 0 01-2-2v-4" />
-                </svg>
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12H3m0 0l4-4m-4 4l4 4m13-8v12a2 2 0 01-2 2H9a2 2 0 01-2-2v-4" />
+</svg>
+
                 <span>Login</span>
               </div>
             </NavLink>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 
