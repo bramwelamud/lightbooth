@@ -1,4 +1,6 @@
 import Logo from '../assets/IMG_20250531_174626_916.jpg';
+import { NavLink } from 'react-router-dom';
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -39,7 +41,7 @@ const Footer = () => {
         <div className="mt-6 pt-6 border-t border-gray-800/50">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
             <div className="flex items-center space-x-6 text-gray-500 text-sm">
-              <span>Privacy Policy</span>
+            <NavLink to="/Privacy"> <button><span>Privacy Policy</span></button>  </NavLink>  
               <span>•</span>
               <span>Terms of Service</span>
               <span>•</span>

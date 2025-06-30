@@ -1,4 +1,4 @@
-import { Phone, Mail, MessageCircle, } from 'lucide-react';
+import { Phone, Mail, MessageCircle } from 'lucide-react';
 import lighmvp from '../assets/light.mp4';
 
 const Contact = () => {

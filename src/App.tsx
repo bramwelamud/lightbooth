@@ -12,6 +12,7 @@ import Download from './app/downloadPage'
 import Features from './app/features'
 import Animate from './app/animate'
 import Footer from './app/footer'
+import Privacy from './app/privacy'
 
 import {  Routes, Route } from 'react-router-dom';
 import './App.css'
@@ -44,6 +45,7 @@ function App() {
         { <Route path="/About" element={<About/>} /> }
         { <Route path="/Contact" element={<Contact/>} /> }
         { <Route path="/Features" element={<Features/>} /> }
+        { <Route path="/Privacy" element={<Privacy/>} /> }
         
         
       </Routes>
