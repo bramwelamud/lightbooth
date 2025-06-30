@@ -13,47 +13,40 @@ import Features from './app/features'
 import Animate from './app/animate'
 import Footer from './app/footer'
 
-import {  Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css'
 
 function App() {
+  return (
+    <div className="min-h-screen bg-black overflow-x-hidden">
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        
+        <main className="flex-grow w-full mx-auto">
+          <Routes>
+            <Route path="/" element={
+              <>
+                <FrontPage />
+                <Section1 />
+                <Animate />
+                <Section2 />
+                <Section_4 />
+                <Section_3 />
+                <Download/>
+              </>
+            } />
+            
+            <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/contact" element={<Contact/>} />
+            <Route path="/features" element={<Features/>} />
+          </Routes>
+        </main>
 
-  return (<>
-  <div className="bg-black vh-100 margin smooth-scroll">
-    <div className=" mx-auto px-4">
-      <Navbar />
-      
-      <Routes>
-        <Route path="/" element={
-          <>
-            <FrontPage />
-            <Section1 />
-            <Animate />
-            <Section2 />
-            <Section_4 />
-            <Section_3 />
-            <Download/>
-            
-            
-          </>
-        } />
-        
-        {/* routes */}
-        { <Route path="/pricing" element={<PricingPage />} /> }
-        { <Route path="/Login" element={<Login />} /> }
-        { <Route path="/About" element={<About/>} /> }
-        { <Route path="/Contact" element={<Contact/>} /> }
-        { <Route path="/Features" element={<Features/>} /> }
-        
-        
-      </Routes>
-      <footer>
-       <Footer />
-      </footer>
+        <Footer />
+      </div>
     </div>
-  </div>
-</>
-
   )
 }
 
