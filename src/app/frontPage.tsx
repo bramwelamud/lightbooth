@@ -57,11 +57,7 @@ function FrontPage() {
           </div>
           
           {/* Decorative elements */}
-          <div className="mt-12 space-y-2">
-            <div className="w-24 h-1 bg-gradient-to-r from-pink-300 to-purple-300 rounded-full"></div>
-            <div className="w-16 h-1 bg-gradient-to-r from-purple-300 to-blue-300 rounded-full opacity-70"></div>
-            <div className="w-12 h-1 bg-gradient-to-r from-blue-300 to-indigo-300 rounded-full opacity-50"></div>
-          </div>
+         
         </div>
         
         {/* Floating particles effect */}
