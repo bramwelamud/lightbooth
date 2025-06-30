@@ -66,8 +66,8 @@ function FrontPage() {
         
         {/* Floating particles effect */}
        
-        <div className="absolute top-60 left-72 w-3 h-3 bg-blue-300 rounded-full animate-bounce opacity-30"></div>
-        <div className="absolute top-32 left-64 w-1 h-1 bg-indigo-300 rounded-full animate-pulse opacity-50"></div>
+       
+        
       </div>
     </div>
   );
