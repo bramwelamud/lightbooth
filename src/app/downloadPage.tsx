@@ -1,4 +1,4 @@
-import image1 from "../assets/image7.png";
+import image1 from "../assets/image32.png";
 import image2 from "../assets/image30.png";
 
 export default function downloadPage() {
@@ -35,8 +35,9 @@ export default function downloadPage() {
                 <div className="relative w-full max-w-sm">
                   <img 
                     src={image1} 
+                   
                     alt="photo" 
-                    className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 ease-out"
+                    className=" h-auto rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300 ease-out"
                   />
                 </div>
               </div>

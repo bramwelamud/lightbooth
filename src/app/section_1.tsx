@@ -1,9 +1,7 @@
 import image2  from '../assets/image2.jpeg';
 import image3  from '../assets/image3.jpeg';
 import image4  from '../assets/image4.jpeg';
-import image6  from '../assets/image6.png';
 import image9  from '../assets/image9.jpeg';
-import image10  from '../assets/image10.png';
 import image11  from '../assets/image11.jpeg';
 import image12  from '../assets/image12.jpeg';
 import image15  from '../assets/image15.jpg';
@@ -28,9 +26,7 @@ const section1: React.FC<Props> = () => {
     { src: image2, alt: "Image 2" },
     { src: image3, alt: "Image 3" },
     { src: image4, alt: "Image 4" },
-    { src: image6, alt: "Image 6" },
     { src: image9, alt: "Image 9" },
-    { src: image10, alt: "Image 10" },
     { src: image11, alt: "Image 11" },
     { src: image12, alt: "Image 12" },
     { src: image15, alt: "Image 14" },

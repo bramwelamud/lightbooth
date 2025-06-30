@@ -66,7 +66,7 @@ const Navbar: React.FC<Props> = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
-          <li>
+          {/* <li>
             <NavLink
               to="/pricing"
               className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
@@ -75,7 +75,7 @@ const Navbar: React.FC<Props> = () => {
               Pricing
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/features"
@@ -141,7 +141,7 @@ const Navbar: React.FC<Props> = () => {
         }`}
       >
         <div className="px-2 pt-4 pb-3 space-y-1 bg-gray-700 mt-4 rounded-lg shadow-lg">
-          <NavLink
+          {/* <NavLink
             to="/pricing"
             onClick={closeMenu}
             className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-600 rounded-md transition-all duration-300 transform hover:translate-x-2"
@@ -152,7 +152,7 @@ const Navbar: React.FC<Props> = () => {
               </svg>
               <span>Pricing</span>
             </div>
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/features"
             onClick={closeMenu}

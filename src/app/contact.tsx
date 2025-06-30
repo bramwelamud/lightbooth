@@ -47,20 +47,7 @@ const Contact = () => {
             {/* Contact Cards */}
             <div className="space-y-4">
               {/* Name Card */}
-              <div className="group relative">
-                <div className="absolute -inset-1 bg-gray-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
-                <div className="relative bg-gray-800/80 backdrop-blur-xl border border-gray-700 rounded-2xl p-6 hover:bg-gray-800 transition-all duration-300">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gray-700 rounded-xl flex items-center justify-center shadow-lg">
-                      <User className="w-6 h-6 text-white" />
-                    </div>
-                    {/* <div>
-                      <p className="text-sm text-gray-400 uppercase tracking-wide">Контактное лицо</p>
-                      <p className="text-2xl font-semibold text-white">Даниил Глимс</p>
-                    </div> */}
-                  </div>
-                </div>
-              </div>
+              
 
               {/* Phone Card */}
               <div className="group relative">
@@ -108,8 +95,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-gray-400 uppercase tracking-wide">Telegram</p>
-                      <a href="https://t.me/Glimps_selfiecamera" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-white hover:text-gray-300 transition-colors">
-                        @Glimps_selfiecamera
+                      <a href="https://t.me/glimps_photobooth" target="_blank" rel="noopener noreferrer" className="text-2xl font-semibold text-white hover:text-gray-300 transition-colors">
+                        @Glimps_photobooth
                       </a>
                     </div>
                   </div>
@@ -145,7 +132,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://t.me/Glimps_selfiecamera"
+                  href="https://t.me/glimps_photobooth"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-gray-500/10 flex items-center justify-center space-x-3"
