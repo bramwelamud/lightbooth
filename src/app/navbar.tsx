@@ -15,6 +15,11 @@ const Navbar: React.FC<Props> = () => {
     setIsMenuOpen(false);
   };
 
+  const handleLoginRedirect = () => {
+    closeMenu();
+    window.location.href = 'https://glimps-photo.ru/login';
+  };
+
   // Hamburger menu SVG icon
   const MenuIcon = () => (
     <svg 
@@ -107,14 +112,13 @@ const Navbar: React.FC<Props> = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/login"
+            <button
+              onClick={handleLoginRedirect}
               className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
-              onClick={closeMenu}
             >
               Login
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-            </NavLink>
+            </button>
           </li>
         </ul>
 
@@ -189,10 +193,9 @@ const Navbar: React.FC<Props> = () => {
               <span>Contact</span>
             </div>
           </NavLink>
-          <NavLink
-            to="/login"
-            onClick={closeMenu}
-            className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-600 rounded-md transition-all duration-300 transform hover:translate-x-2"
+          <button
+            onClick={handleLoginRedirect}
+            className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-600 rounded-md transition-all duration-300 transform hover:translate-x-2 w-full text-left"
           >
             <div className="flex items-center space-x-3">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -200,7 +203,7 @@ const Navbar: React.FC<Props> = () => {
               </svg>
               <span>Login</span>
             </div>
-          </NavLink>
+          </button>
         </div>
       </div>
     </nav>
