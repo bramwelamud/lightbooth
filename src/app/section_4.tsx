@@ -1,5 +1,5 @@
-import image1 from "../assets/image16.jpg";
-import image2 from "../assets/image2.jpeg";
+import image1 from "../assets/image33.jpg";
+import image2 from "../assets/image34.png";
 
 export default function Section4() {
   return (
@@ -11,7 +11,7 @@ export default function Section4() {
         {/* Header Section */}
         <div className="space-y-8 mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white text-center lg:text-left">
-            Каждое селфи — это реклама вашего заведения
+            Привлекаем до 200 новых гостей в месяц
           </h1>
         </div>
 
@@ -21,10 +21,10 @@ export default function Section4() {
           <div className="space-y-8">
             <div className="space-y-6">
               <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed">
-                Гость получает яркое фото и короткое 3-секундное видео, а вместе с ним — ваш логотип. Контент мгновенно улетает в Telegram, WhatsApp и сторис, превращая гостей в онлайн-амбассадоров.
+               Glimps привлекает гостей, которые приходят по персонализированным приглашениям. Мы собираем контакты прямо в заведении, а потом приглашаем этих людей обратно — например, 
               </p>
               <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed">
-                Один пост с отметкой бара видят десятки друзей, а вы получаете бесплатный охват, который сложно купить даже таргетом.
+               в выходные или на спецсобытия. Гость получает фото с вечеринки — и предложение вернуться туда, где он уже классно провел время.
               </p>
             </div>
           </div>

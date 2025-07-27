@@ -1,4 +1,4 @@
-import image1 from '../assets/image31.png';
+import image1 from '../assets/image34.png';
 
 export default function section_3() {
   return (
@@ -6,7 +6,7 @@ export default function section_3() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-5 py-8 sm:py-12">
         <div className="space-y-4 sm:space-y-6">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                Возвращаем гостей снова и снова
+                До 80 000 показов бренда в соцсетях
               </h1>
             </div>
 
@@ -29,7 +29,7 @@ export default function section_3() {
               
                            
               <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-                При каждом взаимодействии будка собирает контакты гостя (по согласию) и кладёт их в вашу CRM. Стоит запланировать новый концерт или тематический вечер — и в пару кликов вы отправляете персональное приглашение вместе с тем самым снимком, который уже вызывает приятные воспоминания. Гость вспоминает эмоцию прошлого визита, быстро принимает решение и снова приходит к вам — зал заполняется ещё до того, как афиши успеют разойтись по пабликам.
+               Каждое фото — это мини-реклама. Мы добавляем логотип заведения на фото и видео, которые гости массово выкладывают в сторис. А чтобы ускорить процесс — делаем акции вроде «выложи фото с хэштегом — получи шот». Работает как сарафанное радио, только быстрее.
               </p>
             </div>
           </div>

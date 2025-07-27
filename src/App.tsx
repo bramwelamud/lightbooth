@@ -8,10 +8,12 @@ import Section_3 from './app/section_3'
 import Section_4 from './app/section_4'
 import Contact from './app/contact'
 import About from './app/about'
+import Section_5 from './app/section_5'
 import Download from './app/downloadPage'
 import Features from './app/features'
 import Animate from './app/animate'
 import Footer from './app/footer'
+
 import Privacy from './app/privacy'
 
 import {  Routes, Route } from 'react-router-dom';
@@ -34,7 +36,7 @@ function App() {
             <Section_4 />
             <Section_3 />
             <Download/>
-            
+            <Section_5 />
             
           </>
         } />
